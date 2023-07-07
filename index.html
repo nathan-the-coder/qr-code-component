@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Can be used when using github pages -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <!-- Can be used when using github pages --> 
+
+  <!-- Website Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Bootstrap 5 CSS file -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <title>Frontend Mentor | QR code component</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media screen and (max-width: 768px) {
+    .container {
+        left: 30px;
+    }
+
+    .attribution {
+        transform: translateX(-50px);
+        transition: transform 0.5s ease;
+    }
+    
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  justify-content: center;
+  background: #fff;
+  margin: 20px 470px;
+  margin-bottom: 70px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 321px;
+  height: 485px;
+  transform: translateX(46px);
+}
+
+.qr-code-container {
+  padding: 30px;
+  border-radius: 20px;
+  background: #3685ff;
+  text-align: center;
+  justify-content: center;
+  width: 270px;
+  height: 230px;
+  transform: translate(5px, -10px);
+}
+
+img {
+  width: 160px;
+  height: 150px;
+  border-radius: 15px;
+  transform: scale(2);
+}
+
+h5 {
+    font-weight: bolder;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 14px;
+}
+</style>
+
+</head>
+<body>
+
+  <!-- Main content -->
+  <div class="container">
+    <!-- QR Code Image inside its container -->
+    <div class="qr-code-container p-2 mt-2 mr-5 mb-5">
+      <img class="p-2 mb-5 mt-5 img-fluid" src="./images/image-qr-code.png" alt="qr-code"/>
+    </div>
+    <!-- QR Code Image inside its container -->
+
+    <h5 class="mt-2">Improve your front-end skills by building projects</h5>
+    <p class="mt-2 mx-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  
+  </div>
+  <!-- end of main content -->
+
+  <!-- Footer -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/nathan-the-coder">Nathaniel Ramos</a>.
+  </div>
+  <!-- end of Footer -->
+
+  <!-- Bootstrap 5 JS file -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- end of Bootstrap 5 JS file -->
+</body>
+</html>
