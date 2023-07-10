@@ -1,13 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@media screen and (max-width: 382px) {
-    .container {
-        left: 30px;
+@media screen and (max-width: 400px) {
+    body {
+      font-family: 'Poppins', sans-serif; 
+      background: #e5e5e5;
+      overflow: hidden;
     }
 
-    .attribution {
+    .container {
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        justify-content: center;
+        background: #3685ff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 321px;
+        height: 485px;
         transform: translateX(-50px);
-        transition: transform 0.5s ease;
+    }
+    .qr-code-container {
+      padding: 30px;
+      border-radius: 20px;
+      background: #3685ff;
+      text-align: center;
+      justify-content: center;
+      width: 270px;
+      height: 230px;
+      transform: translate(10px, -10px);
+    }
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        transform: translateX(4px);
     }
     
 }
